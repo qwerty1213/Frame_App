@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dinghaoguoji.com.frame_app.MainActivity">
+
+    <!--使用FrameLayout当做盛放Fragment对象的容器-->
+    <FrameLayout
+        android:id="@+id/fl_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <!--中间为一条分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg" />
+
+    <!--最下边为RadioGroup-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--第一个RadioButton-->
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_home_btn_pressed"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/app_text_color" />
+        <!--第二个RadioButton-->
+        <RadioButton
+            android:id="@+id/rb_periodeical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_periodical_btn_pressed"
+            android:gravity="center"
+            android:text="期刊"
+            android:textColor="@color/app_text_color" />
+        <!--第三个RadioButton-->
+        <RadioButton
+            android:id="@+id/rb_patent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_patent_btn_presssed"
+            android:gravity="center"
+            android:text="专利"
+            android:textColor="@color/app_text_color" />
+        <!--第四个RadioButton-->
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_mine_btn_pressed"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/app_text_color" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
